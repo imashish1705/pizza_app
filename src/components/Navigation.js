@@ -5,8 +5,7 @@ const Navigation = () => {
     const cartStyle = {
         background: 'blue',
         display: "flex",
-        padding:"6px 10px",
-borderRadius:'54px'
+        borderRadius:'54px'
     }
     return (
         <>
