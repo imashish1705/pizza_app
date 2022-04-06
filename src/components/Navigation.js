@@ -11,7 +11,6 @@ borderRadius:'54px'
     return (
         <>
         <nav className="container mx-auto flex items-center justify-between">
-
             <Link to="/">
                 <img style={{ height: "45px" }} src="/images/burger1.jpg" alt="burger" />
             </Link>
@@ -28,13 +27,11 @@ borderRadius:'54px'
                             <span className="mr-4 mt-4">
                                 12
                             </span>
-
                             <img style={{ height: "45px" }} src="/images/burger2.jpg" alt="burger2" />
                         </div>
                     </Link>
                 </li>
             </ul>
-
         </nav>
         <Products/>
         </>
