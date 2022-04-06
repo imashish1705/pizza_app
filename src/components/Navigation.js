@@ -1,7 +1,6 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
-import Products from '../pages/Products'
-const Navigation = () => {
+const Navigation = (props) => {
     const cartStyle = {
         background: 'blue',
         display: "flex",
@@ -10,13 +9,12 @@ const Navigation = () => {
     return (
         <>
         <nav className="container mx-auto flex items-center justify-between">
-
             <Link to="/">
                 <img style={{ height: "45px" }} src="/images/burger1.jpg" alt="burger" />
             </Link>
             <ul className="flex items-center">
                 <li className="" >
-                    <Link to="/home">Home</Link>
+                    <Link to="/">Home</Link>
                 </li>
                 <li className="ml-2 mr-2" >
                     <Link to="/products"> Products</Link>
@@ -33,9 +31,8 @@ const Navigation = () => {
                     </Link>
                 </li>
             </ul>
-
         </nav>
-        <Products/>
+        {props.children}
         </>
     )
 }

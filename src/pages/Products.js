@@ -1,10 +1,12 @@
 import React from 'react'
-
+import Navigation from '../components/Navigation'
 const Products = () => {
   return (
-    <div>
-        This is a product page
-    </div>
+   <>
+   <Navigation>
+     <div> product page </div>
+   </Navigation>
+   </>
   )
 }
 
